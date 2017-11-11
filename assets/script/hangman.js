@@ -38,26 +38,15 @@ document.addEventListener('keypress', (event) => {
 
 			for (i = 0; i < chosenWord.length; i++ ) {
 
-
-
-			
-
-
 				console.log(keyWord);
 				// console.log(chosenWord[j]);
 
-
-
 				if (keyWord === chosenWord.charAt(i)) {
-
 
 				console.log(keyWord);
 	
-
 					// document.getElementsByClassName('underscore')[0].innerHTML += (' ');
 				
-
-
 					underScore[chosenWord.indexOf(keyWord)] = keyWord;
 
 					pageUnderScore[0].innerHTML = underScore.join (' ');
@@ -65,9 +54,6 @@ document.addEventListener('keypress', (event) => {
 								if(underScore.join('') === chosenWord){
 									alert('Radical!');
 								}
-
-
-
 					// console.log('yes');
 				}
 			}
@@ -77,7 +63,6 @@ document.addEventListener('keypress', (event) => {
 	pageWrongGuess[0].innerHTML = wrongGuess.join (' ');
 	}
 	
-
 });
 
 
